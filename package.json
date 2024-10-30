@@ -1,0 +1,22 @@
+{
+  "name": "blog-restapi",
+  "version": "1.0.0",
+  "description": "blog-rest-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index"
+  },
+  "author": "Jahid",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "env": "^0.0.2",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
