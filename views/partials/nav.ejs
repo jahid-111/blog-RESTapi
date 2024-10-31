@@ -4,14 +4,9 @@
       <a class="nav-link active" aria-current="page" href="#">Blogify</a>
     </li>
 
+    <% if(locals.user) { %>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="/blog/add-new">Add Block</a>
     </li>
 
     <li class="nav-item dropdown">
@@ -21,11 +16,32 @@
         href="#"
         role="button"
         aria-expanded="false"
-        >Mohd. Jahid</a
+        >User Name</a
       >
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Logout</a></li>
+        <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
       </ul>
+    </li>
+
+    <% } else { %>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/user/signup">Create Account</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/user/signin">Signin</a>
+    </li>
+    <%}%>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/">user</a>
     </li>
   </ul>
 </div>
+
+<% if (locals.error) { %>
+<div class="container">
+  <div class="alert alert-danger mt-5" role="alert"><%= locals.error %></div>
+</div>
+
+<% } %>
