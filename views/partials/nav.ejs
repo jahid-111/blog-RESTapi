@@ -1,7 +1,7 @@
 <div class="bg-dark">
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Blogify</a>
+      <a class="nav-link active" aria-current="page" href="/">Blogify</a>
     </li>
 
     <% if(locals.user) { %>
@@ -16,7 +16,7 @@
         href="#"
         role="button"
         aria-expanded="false"
-        >User Name</a
+        ><%=user.email %></a
       >
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
