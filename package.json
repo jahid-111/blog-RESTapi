@@ -1,6 +1,6 @@
 {
   "name": "blog-restapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "blog-rest-api",
   "main": "index.js",
   "scripts": {

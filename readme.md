@@ -12,13 +12,15 @@
 
 Install Dependencies
 
-```npm i express ejs mongoose multer cookie-parser jsonwebtoken nodemon -D
+```
+    npm i express ejs mongoose multer cookie-parser jsonwebtoken nodemon -D
 
 ```
 
 Run the Server
 
-```npm run dev
+```
+    npm run dev
 
 ```
 

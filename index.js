@@ -1,6 +1,8 @@
 const path = require("path");
 const express = require("express");
 
+require("dotenv").config();
+
 const userRoute = require("./routes/user");
 const blogRoute = require("./routes/blog");
 
@@ -20,7 +22,7 @@ app.use(cookieParser());
 app.use(checkForAuthenticationCookie("token"));
 app.use(express.static(path.resolve("./public")));
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // ==============================================  DataBase
 dbConnect();
